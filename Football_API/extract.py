@@ -207,43 +207,7 @@ def input_record2csv(league, season):
     # pd.DataFrame(dict).to_csv(r"input_record.csv", mode = 'a')
 
 
-def get_all_players(leagues, seasons):
-    
-    ths = []
-    for season in seasons:
-        for league in leagues:
-            
-            th = MyThread(get_players_df_data, (league, season))
-            ths.append(th)
-    
-    for th in ths:
-        th.start()
-        
-    for th in ths:
-        th.join()
-    
-    t = pd.DataFrame()
-    for th in ths:
-        t = pd.concat([t, th.get_result()], axis = 0)
-    
-    return t
 
-
-def get_all_players_multiprocess(leagues, seasons):
-    
-    
-    pool = Pool()
-    for season in seasons:
-        for league in leagues:
-            pool.apply_async(get_players_df_data, (league, season) )
-    
-    pool.join()
-    
-
-    t = pd.DataFrame()
-    for process in pool:
-        t = pd.concat([t, process.get()], axis = 0)
-    return t
 
     
 
