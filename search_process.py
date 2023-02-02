@@ -1,9 +1,12 @@
 import pandas as pd
 
+# drop the player.photo column to avoid duplicates which only differ in the photo's url link
 def trim_df(df):
     df = df.drop(columns = ["player.photo"])
     df = df.drop_duplicates()
     return df
+
+# search player from df by name and season
 def search(df):
     df = trim_df(df)
     name = input('name: ').capitalize()
@@ -12,6 +15,10 @@ def search(df):
     rs =df[(df['player.name'].str.contains(f'.*{name}.*')) & (df['league.season'] == year)] 
 
     return rs
+
+# search for two players to compare, return player stats in a single dataframe,
+# prompt user to specify player id if initial search yeilded more than one player,
+# prompt user to re-enter player name if search() returns no result
 def search_players(df):
     results = ['','']
 
@@ -28,7 +35,9 @@ def search_players(df):
         print("registered: {}".format(results[i]["player.name"].tolist()))
     return pd.concat(results)
     
-    
+# retain specific sets of stats according to player's position, pivote dataframe longer
+# to facilitate visualization, concat player.name and league.season to distinguish same player
+# from different years
 def process_df(rs_df):
     positions = []
 
