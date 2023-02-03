@@ -3,12 +3,12 @@ import pandas as pd
 
 import sys
 sys.path.insert(0, sys.path[0][:-4])
-sys.path.insert(0, sys.path[0]+'Project_FootballAPI')
+sys.path.insert(0, sys.path[0]+'Football_API')
 
-for i in sys.path:
-    print(i)
+# for i in sys.path:
+#     print(i)
 
-import Project_FootballAPI.extract as et
+import Football_API.extract as et
 
 
 
