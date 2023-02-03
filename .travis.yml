@@ -5,6 +5,8 @@ python:
 
 install:
     - pip install pandas
+    - pip install requests
+    
 
 script:
   - python ./test/TestExtract.py
