@@ -2,6 +2,10 @@ language: python
 python:
   - "3.9"
 # command to run tests
+
+before_script:
+  - sudo apt-get install pandas
+
+
 script:
-  - python pip install pandas
   - python ./test/TestExtract.py
