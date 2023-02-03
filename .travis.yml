@@ -3,8 +3,8 @@ python:
   - "3.9"
 # command to run tests
 
-before_script:
-  - sudo apt-get install pandas
+install
+  - pip install pandas
 
 
 script:
