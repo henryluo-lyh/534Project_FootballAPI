@@ -3,4 +3,5 @@ python:
   - "3.9"
 # command to run tests
 script:
+  - python pip install pandas
   - python ./test/TestExtract.py
