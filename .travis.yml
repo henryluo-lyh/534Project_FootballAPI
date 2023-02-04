@@ -9,4 +9,4 @@ install:
     
 
 script:
-  - python ./test/TestExtract.py
+  - python ./test/TestProcess.py
