@@ -6,6 +6,7 @@ python:
 install:
     - pip install pandas
     - pip install requests
+    - pip install plotly
 
 
 script:
