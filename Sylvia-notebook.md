@@ -9,3 +9,9 @@ Date: Feb08, 2023
 commit: https://github.com/henryluo-lyh/534Project_FootballAPI/commit/853f4b7980b7cc0ae34e419bc5141e9ed8ac2dbe
 
 I wrote the individual report today, to record the workflow for the past few weeks. 
+
+Date: Feb09, 2023
+commit: https://github.com/henryluo-lyh/534Project_FootballAPI/commit/ac785b1c767841baaf84aa8866ae9b0c396b0776 
+
+I wrote the unittest for visualization.py.
+
