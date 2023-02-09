@@ -16,3 +16,9 @@ https://github.com/henryluo-lyh/534Project_FootballAPI/commit/0c2661f76c16ff2a9d
 write individual notebook
 
 commit: https://github.com/henryluo-lyh/534Project_FootballAPI/commit/2173f09da21eba66a652a185ec3814da05e2f0dd
+
+# 9 Feb
+
+write contribution file
+
+commit: https://github.com/henryluo-lyh/534Project_FootballAPI/commit/915d626b0150723bf5724216e5142053b5e32ec6
