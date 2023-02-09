@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.9"
+# command to run tests
+
+install:
+    - pip install pandas
+    - pip install requests
+    
+
+script:
+  - python ./test/TestProcess.py
