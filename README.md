@@ -11,5 +11,6 @@
 - This API will allow users to select two players to compare their performance in a specific season. Users can specify which season and which league to search for. The API can access data from most of the professional leagues such as La Liga, Premier League, Serie A, Ligue 1, Bundesliga as well as North America's MLS and the Chinese Super League. An overlaid bar chart or radar chart will be rendered showing the key stats of the players and teams, allowing the user to compare the stats at a glance quickly. Players of different positions (attacker, midfielder, defender) will compare specific stats relevant to their positions. 
 
 ## Intended users and outcome
-- Football fans who wants to find out quickly who is the better player or which team is the better team
-- A quick and easy reference to visualized player or team stats without having to switch between multiple webpages
+- Football fans who wants to find out quickly who is the better player
+- Football related content creators who wants to have customized visualizations of player stats
+- A quick and easy reference to visualized player stats without having to switch between multiple webpages
